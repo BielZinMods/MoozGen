@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('https://cdn.discordapp.com/attachments/1250988093025292457/1262620346301943818/mooz_1.png?ex=66993c94&is=6697eb14&hm=dd9f2ed7edae3c2cdfb73c984f57a139db2b1ff632190c13494ff5df68803ea9&');
+            background-image: url('https://cdn.discordapp.com/attachments/1273777800419082320/1277439517808398456/0k6meqvps4h91.jpg?ex=66cd2bc2&is=66cbda42&hm=a0cdb90ccebf879f494df03d49d0ab457787323a9b459236e4e352e623982dac&');
             color: #ffffff;
             font-family: 'Roboto', sans-serif;
             overflow: hidden; /* Para evitar a barra de rolagem durante a animação */
@@ -49,7 +49,7 @@
             transition: border-color 0.3s ease;
         }
         .input-box input:focus {
-            border-color: #4CAF50;
+            border-color: #020202;
         }
         .output-box {
             margin-top: 20px;
@@ -74,7 +74,7 @@
             font-size: 16px;
             border: none;
             border-radius: 5px;
-            background-color: #4CAF50;
+            background-color: #020202;
             color: white;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
@@ -82,7 +82,7 @@
             animation: fadeIn 1s forwards 2s;
         }
         .btn:hover {
-            background-color: #45a049;
+            background-color: #020202;
             transform: translateY(-2px);
         }
         .btn:active {
@@ -110,6 +110,7 @@
         <button class="btn fade-in" onclick="generateCodes()">Gerar Códigos</button>
         <button class="btn fade-in" onclick="copyToClipboard()">Copiar</button>
         <button class="btn download-btn fade-in" onclick="downloadTxtFile()">Baixar Arquivo .txt</button>
+        <button class="btn fade-in" onclick="checkarcodgios()">Checker Links</button>
     </div>
 
     <script>
@@ -154,6 +155,11 @@
             hiddenElement.target = "_blank";
             hiddenElement.download = "códigos_nitro.txt";
             hiddenElement.click();
+        }
+
+        // Função para redirecionar para a página checker.html
+        function checkarcodgios() {
+            window.location.href = 'checker.html'; // Redireciona para a página checker.html
         }
     </script>
 </body>
